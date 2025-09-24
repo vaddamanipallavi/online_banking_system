@@ -1,0 +1,161 @@
+/* ---------- GLOBAL RESET ---------- */
+* {
+  margin: 0;   /* remove ALL default margins */
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+body, html, #root {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ---------- LAYOUT WRAPPER ---------- */
+.layout {
+  
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #003366;
+  color: white;
+  margin: 0;   /* no gap */
+}
+
+/* remove any spacing around nav links */
+.nav-links {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+.banner {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+
+/* ---------- BANNER ---------- */
+.banner {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(120deg, #004080, #0073e6);
+  color: white;
+  flex-wrap: wrap;
+  margin-top: 0;
+  padding-top: 20px; /* ✅ Add padding to prevent margin collapse */
+}
+
+
+.banner-text {
+ 
+  margin-top: 0px;
+}
+
+.banner-text h1 {
+  font-size: 2.2rem;
+  
+}
+
+.banner-text p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* ---------- LOGIN BOX (children like forms) ---------- */
+.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0; /* removed extra gap */
+}
+
+.login-box .register-form {
+  width: 90%;
+  max-width: 320px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  color: #333;
+}
+
+/* ---------- FOOTER (security tips) ---------- */
+.security-tips {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f1f1f1;
+  margin: 0;
+  gap: 15px; /* space between cards */
+}
+
+.security-card {
+  flex: 1 1 220px; /* flexible with a min width of 220px */
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.security-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.security-card.success {
+  background-color: #e6f7e6;
+  border-left: 6px solid #28a745; /* green */
+}
+
+.security-card.danger {
+  background-color: #fdeaea;
+  border-left: 6px solid #dc3545; /* red */
+}
+
+.security-card strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.security-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .banner-text {
+    margin-bottom: 20px;
+  }
+}

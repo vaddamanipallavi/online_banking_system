@@ -1,0 +1,23 @@
+/* Remove default body spacing */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header cleanup */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background: #003366;
+  color: white;
+}
+
+/* Nav links flush inside header */
+.nav-links {
+  display: flex;
+  gap: 20px; /* controls spacing between links only */
+  margin: 0; /* remove accidental margins */
+
+}

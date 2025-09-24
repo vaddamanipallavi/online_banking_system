@@ -1,0 +1,47 @@
+/* Register.css */
+
+/* Ensure the layout container centers the form */
+.layout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f7fa; /* Light gray-blue background for contrast */
+  padding: 20px;
+}
+
+/* Style the registration form */
+.register-form {
+  background-color: #ffffff; /* White background */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Form title */
+.register-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Error message style */
+.error {
+  color: #e74c3c;
+  background-color: #fceae9;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Optional: add spacing between inputs if needed */
+.register-form > *:not(:last-child) {
+  margin-bottom: 6px;
+}
